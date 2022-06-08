@@ -1,0 +1,51 @@
+﻿@model PrinterModel
+
+@{
+   
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Add Router</title>
+</head>
+<body>
+   
+
+<div>
+    <form action="UpdatePrinter" method="post">
+        @Html.HiddenFor(e=>e.Id)
+        <div class="form-group">
+            @Html.TextBoxFor(e => e.Ip, new {@class = "form-control", placeholder = "Ip", required = "true"})
+        </div>
+        <div class="form-group">
+            @Html.TextBoxFor(e => e.Color, new {@class = "form-control", placeholder = "Color", required = "true"})
+
+        </div>
+        <div class="form-group">
+
+            @Html.TextBoxFor(e => e.Brand, new {@class = "form-control", placeholder = "Brand", required = "true"})
+        </div>
+        <div class="form-group">
+            @Html.TextBoxFor(e => e.DeviceName, new {@class = "form-control", placeholder = "DeviceName", required = "true"})
+
+        </div>
+        <div class="form-group">
+            @Html.TextBoxFor(e => e.SerialNo, new {@class = "form-control", placeholder = "SerialNumber", required = "true"})
+
+        </div>
+        <div class="form-group">
+            @Html.TextBoxFor(e => e.Memo, new {@class = "form-control", placeholder = "Memo", required = "true"})
+
+        </div>
+        <div class="form-group">
+            @Html.TextBoxFor(e => e.AcquisitionDate, new {@class = "form-control", placeholder = "AcquisitionDate", required = "true"})
+
+        </div>
+
+        <input type="submit" class="btn btn-success"/>
+    </form>
+</div>
+</body>
+</html>

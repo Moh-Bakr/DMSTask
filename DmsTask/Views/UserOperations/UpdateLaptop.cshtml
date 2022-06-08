@@ -1,0 +1,65 @@
+﻿@model LaptopModel
+
+@{
+   
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Add Router</title>
+</head>
+<body>
+<div>
+    <form action="UpdateLaptop" method="post">
+        @Html.HiddenFor(e=>e.Id)
+        <div class="form-group">
+            @Html.TextBoxFor(e => e.Processor, new {@class = "form-control", placeholder = "Processor", required = "true"})
+        </div>
+        <div class="form-group">
+            @Html.TextBoxFor(e => e.HD, new {@class = "form-control", placeholder = "HD", required = "true"})
+
+        </div>
+        <div class="form-group">
+            @Html.TextBoxFor(e => e.Display, new {@class = "form-control", placeholder = "Display", required = "true"})
+
+        </div>
+        <div class="form-group">
+            @Html.TextBoxFor(e => e.IP, new {@class = "form-control", placeholder = "IP", required = "true"})
+
+        </div>
+        <div class="form-group">
+            @Html.TextBoxFor(e => e.Brand, new {@class = "form-control", placeholder = "Brand", required = "true"})
+
+        </div>
+        <div class="form-group">
+            @Html.TextBoxFor(e => e.User, new {@class = "form-control", placeholder = "User", required = "true"})
+
+        </div>
+        <div class="form-group">
+            @Html.TextBoxFor(e => e.Ram, new {@class = "form-control", placeholder = "Ram", required = "true"})
+
+        </div>
+        <div class="form-group">
+            @Html.TextBoxFor(e => e.DeviceName, new {@class = "form-control", placeholder = "DeviceName", required = "true"})
+
+        </div>
+        <div class="form-group">
+            @Html.TextBoxFor(e => e.SerialNo, new {@class = "form-control", placeholder = "SerialNo", required = "true"})
+
+        </div>
+        <div class="form-group">
+            @Html.TextBoxFor(e => e.Memo, new {@class = "form-control", placeholder = "Memo", required = "true"})
+
+        </div>
+        <div class="form-group">
+            @Html.TextBoxFor(e => e.AcquisitionDate, new {@class = "form-control", placeholder = "AcquisitionDate", required = "true"})
+
+        </div>
+
+        <input type="submit" class="btn btn-success"/>
+    </form>
+</div>
+</body>
+</html>

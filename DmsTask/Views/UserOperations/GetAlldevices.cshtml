@@ -1,0 +1,51 @@
+﻿@using DmsTask.Provider
+@model IEnumerable<LaptopModel>
+
+@{
+   
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Add Router</title>
+</head>
+<body>
+<div>
+    <table class="table">
+        <thead>
+        <tr>
+           
+            <th scope="col">DeviceId</th>
+            <th scope="col">DeviceName</th>
+            <th scope="col">Category</th>
+            <th scope="col">Operation</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+
+
+            <tr>
+               
+                <td>@item.Id</td>
+                <td>@item.DeviceName</td>
+                <td>@item.Category</td>
+                @if (item.Category == type.Printer)
+                {
+                    <td><a  href="/UserOperations/updatePrinter?id=@item.Id">Update</a></td>
+
+                }else if (item.Category == type.Laptop)
+                {
+                    <td><a  href="/UserOperations/updateLaptop?id=@item.Id" >Update</a></td>
+
+                }
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

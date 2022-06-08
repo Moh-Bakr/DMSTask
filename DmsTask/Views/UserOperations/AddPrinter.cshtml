@@ -1,0 +1,44 @@
+﻿@model PrinterModel
+
+@{
+   
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Add Router</title>
+</head>
+<body>
+   
+
+<div>
+    <form action="AddPrinter" method="post">
+        <div class="form-group">
+            <input name="Ip" required placeholder="Ip Address" class="form-control"/>
+        </div>
+        <div class="form-group">
+            <input name="Color" required placeholder="DeviceColor" class="form-control"/>
+        </div>
+        <div class="form-group">
+            <input name="Brand" required placeholder="Brand" class="form-control"/>
+        </div>
+        <div class="form-group">
+            <input name="DeviceName" required placeholder="DeviceName" class="form-control"/>
+        </div>
+        <div class="form-group">
+            <input name="SerialNo" required placeholder="SerialNo" class="form-control"/>
+        </div>
+        <div class="form-group">
+            <input name="Memo" required placeholder="Memo" class="form-control"/>
+        </div>
+        <div class="form-group">
+            <input name="AcquisitionDate" required type="date" placeholder="AcquisitionDate" class="form-control"/>
+        </div>
+        
+        <input type="submit" class="btn btn-success"/>
+    </form>
+</div>
+</body>
+</html>
